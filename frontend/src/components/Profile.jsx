@@ -21,8 +21,8 @@ const Profile = () => {
     return (
         <div>
             <Navbar />
-            <div className='max-w-4xl mx-auto bg-white border border-gray-200 rounded-2xl my-5 p-8'>
-                <div className='flex justify-between'>
+            <div className='max-w-4xl mx-auto bg-white border border-gray-200 rounded-2xl my-5 p-4 md:p-8 sm:w-auto w-[calc(100%-2rem)]'>
+                <div className='flex flex-col sm:flex-row justify-between gap-4'>
                     <div className='flex items-center gap-4'>
                         <Avatar className="h-24 w-24">
                             <AvatarImage src={user?.profile?.profilePhoto} alt="profile" />
@@ -60,7 +60,7 @@ const Profile = () => {
                     }
                 </div>
             </div>
-            <div className='max-w-4xl mx-auto bg-white rounded-2xl'>
+            <div className='max-w-4xl mx-auto bg-white rounded-2xl sm:w-auto w-[calc(100%-2rem)]'>
                 <h1 className='font-bold text-lg my-5'>Applied Jobs</h1>
                 {/* Applied Job Table   */}
                 <AppliedJobTable />
